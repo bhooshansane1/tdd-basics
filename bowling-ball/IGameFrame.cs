@@ -11,8 +11,14 @@ namespace BowlingBall
         bool IsSpare();
         void SetIsSpare(bool val);
         void Roll(int pins, int index);
+        void SetFrameNumber(int frameNo);
+        int GetTotalPoints();
         int GetTotalFramePoints();
+        void SetTotalPoints(int number);
         int GetPointsFromIndex(int rollIndex);
+        void FreezeFrame();
+        bool IsFrozen();
         int GetRemainingPins();
+
     }
 }
